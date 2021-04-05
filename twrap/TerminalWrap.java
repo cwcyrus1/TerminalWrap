@@ -106,6 +106,66 @@ public class TerminalWrap {
     public static void printWrap(float[][] floatss, boolean equal) {
         choice(Arrays.deepToString(floatss),equal);
     }
+    public static void printWrap(String string) {
+        choice(string,false);
+    }
+    public static void printWrap(Object[] objects) {
+        choice(Arrays.toString(objects),false);
+    }
+    public static void printWrap(Object[][] objectss) {
+        choice(Arrays.deepToString(objectss),false);
+    }
+    public static void printWrap(ArrayList<?> objects) {
+        choice(Arrays.toString(objects.toArray(new Object[objects.size()])),false);
+    }
+    public static void printWrap(int[] ints) {
+        choice(Arrays.toString(ints),false);
+    }
+    public static void printWrap(int[][] intss) {
+        choice(Arrays.deepToString(intss),false);
+    }
+    public static void printWrap(double[] doubles) {
+        choice(Arrays.toString(doubles),false);
+    }
+    public static void printWrap(double[][] doubless) {
+        choice(Arrays.deepToString(doubless),false);
+    }
+    public static void printWrap(boolean[] booleans) {
+        choice(Arrays.toString(booleans),false);
+    }
+    public static void printWrap(boolean[][] booleanss) {
+        choice(Arrays.deepToString(booleanss),false);
+    }
+    public static void printWrap(char[] chars) {
+        choice(Arrays.toString(chars),false);
+    }
+    public static void printWrap(char[][] charss) {
+        choice(Arrays.deepToString(charss),false);
+    }
+    public static void printWrap(byte[] bytes) {
+        choice(Arrays.toString(bytes),false);
+    }
+    public static void printWrap(byte[][] bytess) {
+        choice(Arrays.deepToString(bytess),false);
+    }
+    public static void printWrap(short[] shorts) {
+        choice(Arrays.toString(shorts),false);
+    }
+    public static void printWrap(short[][] shortss) {
+        choice(Arrays.deepToString(shortss),false);
+    }
+    public static void printWrap(long[] longs) {
+        choice(Arrays.toString(longs),false);
+    }
+    public static void printWrap(long[][] longss) {
+        choice(Arrays.deepToString(longss),false);
+    }
+    public static void printWrap(float[] floats) {
+       choice(Arrays.toString(floats),false);
+    }
+    public static void printWrap(float[][] floatss) {
+        choice(Arrays.deepToString(floatss),false);
+    }
     private static void printer(String str, int wrapIndex) {   
         String[] split = str.split(" ");
         String toPrint = "";

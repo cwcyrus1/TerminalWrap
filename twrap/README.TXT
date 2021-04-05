@@ -73,7 +73,7 @@ How it works, & Instructions:
         - public static int getTextSize()                                       |accessor for "textSize" field        
         - private static double getMonitorWidth()                               |gets the width of the chosen display, from "monitor" field       
         - public static void printWrap(String string, boolean equal)            |calls "choice(String str, boolean equal)", after changing the first argument into its "toString()" format (for custom classes, "toString" not provided)
-                                      (Object[] objects, boolean equal)         |
+                                      (Object[] objects, boolean equal)         |if "equal" is not provided, default is false
                                       (Object[][] objectss, boolean equal)      |
                                       (ArrayList<?> objects, boolean equal)     |
                                       (int[] ints, boolean equal)               |
@@ -91,7 +91,28 @@ How it works, & Instructions:
                                       (long[] longs, boolean equal)             |
                                       (long[][] longss, boolean equal)          |
                                       (float[] floats, boolean equal)           |
-                                      (float[][] floatss, boolean equal)        |                                      
+                                      (float[][] floatss, boolean equal)        |
+                                      (String string)                           |
+                                      (Object[] objects)                        |
+                                      (Object[][] objectss)                     |
+                                      (ArrayList<?> objects)                    |
+                                      (int[] ints)                              |
+                                      (int[] intss)                             |
+                                      (double[] doubles)                        |
+                                      (double[][] doubless)                     |
+                                      (boolean[] booleans)                      |
+                                      (boolean[][] booleanss)                   |
+                                      (char[] chars)                            |
+                                      (char[][] charss)                         |
+                                      (byte[] bytes)                            |
+                                      (byte[][] bytess)                         |
+                                      (short[] shorts)                          |
+                                      (short[][] shortss)                       |
+                                      (long[] longs)                            |
+                                      (long[][] longss)                         |
+                                      (float[] floats)                          |
+                                      (float[][] floatss)                       |
+                                      
         - private static void printer(String str, int wrapIndex)                |prints the String, wrapping once the "wrapIndex" (default "widthWindow - 3") has been reached or surpassed; automatically goes to the next line afterwards        
         - private static void printerEqual(String str)                          |calculates the wrapIndex for the String str, with a tolerance of +/- 3 tokens, to try and make the printer print nearly equal lengths for each wrapped row        
         - private static void choice(String str, boolean equal)                 |if "true" is passed for the second argument, "printerEqual(String str)" is called; else, "printer(String str, int wrapIndex)" is called

@@ -136,3 +136,4 @@ How it works, & Instructions:
         - public static String getData()                                        |returns the information of the file "TerminalWrapData.bisv"
         - public static void editSetup()                                        |calls "setup()", makes "toCheckChange" false
         - public static void defaultSetup()                                     |sets the monitor to the default screen and sets the font size to 10, and makes "toCheckChange" false
+        
